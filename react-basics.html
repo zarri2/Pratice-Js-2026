@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> React Basics</title>
+    </head>
+    <body>
+        <div class="js-container"></div>
+        <div>
+            <h1 id="arry_result"> Arr Result = </h1>
+        </div>
+        
+        <script src="https://unpkg.com/supersimpledev/react.js"></script>
+        <script src="https://unpkg.com/supersimpledev/react-dom.js"></script>
+
+        <script src="https://unpkg.com/supersimpledev/babel.js"></script>
+        <script type="text/babel">
+            const container = document.querySelector('.js-container');
+            ReactDOM.createRoot(container).render('Welcome to Supersimpledev React Course');
+        </script>
+        <script>
+            let x = 9;
+            const y = 4;
+            console.log("sum of x + y = " , x + y)
+        </script>
+        <script>
+            const rang = ["red" , "green", "yellow" ];
+            rang[0] = 'blue'
+            rang.pop()
+            console.log("colours are : ", rang)
+        </script>
+        <!--
+        <script>
+            const colour = ["red", "green", "blue", "yellow", "pink"]
+            console.log(colour)
+            colour.splice(3,0,"black")
+            console.log(colour)
+        </script>
+        -->
+        <!--
+        <script>
+            const colours = ["green", "red", "blue", "pink", "yellow"]
+            const new_colours = [...colours,  "black"]
+
+            console.log(colours)
+            console.log(new_colours)
+        </script>
+        
+        <script>
+            const colours = ["red", "green", "blue", "pink", "Yellow"]
+            console.log(colours)
+            const selected = colours.slice(2,4)
+            console.log(selected)
+        </script>
+        
+        <script>
+            const text = "hello world"
+            console.log(text)
+            const arr = text.split("")
+            console.log(arr)
+            arr.splice(5,1)
+            console.log(arr)
+
+            document.getElementById("arry_result").textContent += arr ;
+        </script>
+        
+        <script>
+            const numbers =[1,2,3,4,5];
+            const neew = numbers.map(num => "My fav number is " + num );
+            console.log(neew)
+        </script>
+        -->
+        <!--X
+        <script>
+            const Products = [{ Name : "Laptop", Price : "12000"}, 
+            {Name : "Mobile", Price : "15000"}, {Name : "Charger", Price : "1000"}
+            ]
+
+            console.log(Products)
+
+            const Names = Products.map(num => num.Name)
+            console.log(Names)
+            const Prices = Products.map(num => num.Price)
+            console.log(Prices)
+
+        </script>
+        -->
+        <script>
+            const fruits = ["Apple", "banana", "orange"]
+            console.log(fruits)
+            const numbered = fruits.map((fruit, index) => {
+                return `${index+1}. ${fruit}`
+
+            
+            });
+            console.log(numbered);
+            
+        </script>
+        
+
+    </body>
+    
+</html>
